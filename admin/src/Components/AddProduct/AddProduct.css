@@ -1,0 +1,135 @@
+/* Container */
+.add-product {
+  padding: 30px;
+  max-width: 700px;
+  margin: 110px auto 30px auto; /* top margin accounts for navbar height */
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease-in-out;
+}
+
+.add-product:hover {
+  transform: translateY(-3px);
+}
+
+/* Each input field */
+.addproduct-itemfield {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.addproduct-itemfield p {
+  margin: 0 0 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Inputs & Select */
+.addproduct-itemfield input,
+.addproduct-itemfield select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.addproduct-itemfield input:focus,
+.addproduct-itemfield select:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.3);
+}
+
+/* Two inputs side by side (Price + Discount Price) */
+.price-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.price-fields .addproduct-itemfield {
+  flex: 1;
+}
+
+/* Upload Box */
+.upload-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  border: 2px dashed #aaa;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+  border-color: #007bff;
+  background: #f8faff;
+}
+
+/* Button */
+.addproduct-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #007bff, #0056d6);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addproduct-btn:hover {
+  background: linear-gradient(90deg, #0056d6, #0041a8);
+  transform: scale(1.02);
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+  .add-product {
+    margin-top: 100px; /* slightly smaller navbar height */
+    max-width: 90%;
+    padding: 25px;
+  }
+  .price-fields {
+    gap: 12px;
+  }
+}
+
+/* Small tablets / large mobiles (≤ 900px) */
+@media (max-width: 900px) {
+  .add-product {
+    margin-top: 90px;
+  }
+  .price-fields {
+    gap: 10px;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .add-product {
+    margin-top: 80px; /* mobile navbar height */
+    max-width: 95%;
+    padding: 20px;
+  }
+
+  .price-fields {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .addproduct-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}

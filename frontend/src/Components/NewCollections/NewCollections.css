@@ -1,0 +1,80 @@
+.new-collections {
+  width: 100%;
+  padding: 50px 8%;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.new-collections h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.new-collections hr {
+  width: 70px;
+  height: 3px;
+  background: #ff4141;
+  border: none;
+  margin: 12px auto 40px;
+  border-radius: 3px;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Individual Item Card */
+.item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 8px 0;
+}
+
+/* Prices Section */
+.item-prices {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.item-prices .new-price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4141;
+}
+
+.item-prices .old-price {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+}

@@ -1,0 +1,118 @@
+/* Full Page Centering */
+.loginsignup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card Container */
+.loginsignup-container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  width: 350px;
+  text-align: center;
+}
+
+/* Title */
+.loginsignup-container h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* Input Fields */
+.loginsignup-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.loginsignup-fields input {
+  padding: 12px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.loginsignup-fields input:focus {
+  border-color: #ff4c3b;
+  box-shadow: 0 0 6px rgba(255, 76, 59, 0.3);
+}
+
+/* Terms & Conditions */
+.loginsignup-terms {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin: 12px 0 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.loginsignup-terms input {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.loginsignup-terms label span {
+  color: #ff4c3b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loginsignup-terms label span:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.loginsignup-container button {
+  width: 100%;
+  padding: 12px;
+  background: #ff4c3b;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.loginsignup-container button:hover {
+  background: #e63e2f;
+}
+
+/* Already have account text */
+.loginsignup-login {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.loginsignup-login span {
+  color: #ff4c3b;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.loginsignup-login span:hover {
+  text-decoration: underline;
+}
+/* Responsive */
+@media (max-width: 400px) {
+  .loginsignup-container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

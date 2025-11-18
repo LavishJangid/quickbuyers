@@ -1,0 +1,84 @@
+.Foooter {
+  background-color: #fff;   /* White background */
+  color: #111;              /* Dark text for contrast */
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #ddd; /* light border for separation */
+}
+
+.footer-logo p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.footer-links li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links li:hover {
+  color: #0077ff; /* nice hover effect */
+}
+
+.footer-social-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social-container img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-container img:hover {
+  transform: scale(1.2);
+}
+
+.Foooter hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.Foooter p {
+  font-size: 14px;
+  color: #555;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;   /* stack logo and name vertically */
+  align-items: center;      /* center horizontally */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 80px;  /* adjust size of logo */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 28px;     /* make name bigger */
+  font-weight: bold;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
